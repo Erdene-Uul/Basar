@@ -201,7 +201,7 @@ const Footer = () => {
                                     <li>
                                         <a href="#">
                                             <div className="p-3 rounded-lg">
-                                                <FontAwesomeIcon icon={brands('Twitter')} size="3x" />
+                                                <FontAwesomeIcon icon={brands('Twitter')} size="3x"/>
                                             </div>
 
                                         </a>
@@ -210,7 +210,7 @@ const Footer = () => {
                                     <li>
                                         <a href="#">
                                             <div className="p-3 rounded-lg">
-                                                <FontAwesomeIcon icon={brands('Youtube')} size="3x" />
+                                                <FontAwesomeIcon icon={brands('Youtube')} size="3x"/>
                                             </div>
 
                                         </a>
