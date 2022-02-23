@@ -13,8 +13,8 @@ import { Route, Switch } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <div>
-        <Navbar />
+      <div className=" overflow-x-hidden" >
+        <Navbar  />
         <main>
           <Switch>
             <Route path="/animals" component={Animals} />
@@ -27,6 +27,7 @@ class App extends Component {
           </Switch>
         </main>
       </div>
-  )}
+    );
+  }
 }
 export default App;

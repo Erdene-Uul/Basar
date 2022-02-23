@@ -1,10 +1,9 @@
 import React from "react";
 import MenuItem from "../MenuItem";
 
-
 const Menu = (props) => {
   return (
-    <div className=" invisible  lg:visible w-6/12 m-auto">
+    <div className="lg:w-6/12 lg:m-auto w-0 lg:flex lg:visible hidden ">
       <ul className="flex justify-between items-center relative  font-thin">
         <MenuItem exact link="/">
           Нүүр
