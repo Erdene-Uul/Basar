@@ -1,4 +1,4 @@
-import React,{usdState, useState} from "react";
+import React,{ useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBars, faClose} from "@fortawesome/free-solid-svg-icons";
 import Menu from "../Menu";
@@ -15,14 +15,14 @@ const Navbar = (props) => {
 }
   return (
    
-    <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30 ">
-       <button onClick={()=>{showSideMenu()}} className="lg:hidden ml-4"> 
+    <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30  ">
+      <div className="fixed top-4 left-3"> <button onClick={()=>{showSideMenu()}} className="lg:hidden"> 
     {(isSideMenuOpen)?<FontAwesomeIcon
       icon={faClose}
     /> : <FontAwesomeIcon
     icon={faBars }
   />}
-    </button>
+    </button></div>
     {(isSideMenuOpen) ? Sidebar(): ''}
       {/* lg:  */}
       <div className="flex justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 ">
@@ -46,7 +46,7 @@ const Navbar = (props) => {
             type="search"
             placeholder="хайх"
           ></input>
-          <button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer visible mr-3">
+          <button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer  mr-3">
             <FontAwesomeIcon
               icon={solid("magnifying-glass")}
               size="1x"
