@@ -1,14 +1,29 @@
-import React from "react";
-
+import React,{usdState, useState} from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as favicon from "@fortawesome/free-solid-svg-icons";
 import Menu from "../Menu";
 import logo_image from "../../assets/images/menu_logo/menu_logo.png";
 import logo_image2 from "../../assets/images/menu_logo/menu_logo_02.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import Sidebar from "../Sidebar";
+
 
 const Navbar = (props) => {
+  const [isSideMenuOpen, setisSideMenuOpen]= useState(false);
+  const showSideMenu = () =>{
+    (isSideMenuOpen) ? setisSideMenuOpen(false):setisSideMenuOpen(true)
+}
   return (
+   
     <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30 ">
+       <button onClick={()=>{showSideMenu()}} className="lg:hidden menu-button"> 
+    {(isSideMenuOpen)?<FontAwesomeIcon
+      icon={favicon.faBars}
+    /> : <FontAwesomeIcon
+    icon={favicon.faBars}
+  />}
+    </button>
+    {(isSideMenuOpen) ? Sidebar(): ''}
       {/* lg:  */}
       <div className="flex justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 ">
         <a href="#" className="text-2xl flex cursor-pointer">
@@ -59,7 +74,10 @@ const Navbar = (props) => {
           НЭВТРЭХ
         </button>
       </ul>
+    
+
     </nav>
+    
   );
 };
 export default Navbar;

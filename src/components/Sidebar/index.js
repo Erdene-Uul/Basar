@@ -1,7 +1,15 @@
-import React from "react";
-import Navbar from "../Navbar";
+import react from "react";
+import Menu from "../Menu";
 
 
-const Sidebar = (props) => {
-    return
+const Sidebar = () => {
+   
+  
+
+    return (<div>
+            <Menu />
+           
+    </div> 
+   )
 }
+export default Sidebar;

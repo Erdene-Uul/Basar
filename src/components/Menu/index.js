@@ -4,7 +4,7 @@ import MenuItem from "../MenuItem";
 const Menu = (props) => {
   return (
     <div className=" hidden lg:visible lg:flex w-6/12 m-auto">
-      <ul className="flex justify-between items-center relative  font-thin">
+      <ul className="hidden lg:flex lg:justify-between lg:items-center relative  font-thin">
         <MenuItem exact link="/">
           Нүүр
         </MenuItem>
