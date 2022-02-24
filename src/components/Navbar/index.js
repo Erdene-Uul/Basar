@@ -23,9 +23,28 @@ const Navbar = (props) => {
       </div>
 
       <Menu />
-      <ul className="flex  items-center pl-16 invisible lg:visible">
-        <button className="bg-blueMain text-white duration-500 hover:bg-sky-700 rounded-3xl text-sm font-Roboto relative mr-4 flex">
-          <div className="h-9 w-9 bg-sky-600 flex items-center justify-center rounded-full">
+      <ul className="flex items-center justify-end w-full lg:w-2/6  ">
+        {/* search input */}
+        <div className="flex">
+          <input
+            className="  outline-none text-xs placeholder:text-zinc-600 placeholder:text-right caret-gray-500"
+            type="search"
+            placeholder="хайх"
+          ></input>
+          <button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer visible mr-3">
+            <FontAwesomeIcon
+              icon={solid("magnifying-glass")}
+              size="1x"
+              color="#71717A"
+            />
+          </button>
+
+          <div className="hidden lg:flex lg:visible lg:w-0.1  lg:h-6 bg-gray-200  mr-10"></div>
+        </div>
+
+        {/* button дэлгүүр нэвтрэх */}
+        <button className="bg-blueMain text-white duration-500 hover:bg-sky-700 rounded-3xl text-xs font-Roboto relative mr-4 lg:flex hidden ">
+          <div className="h-8 w-8 bg-sky-600 flex items-center justify-center rounded-full">
             <FontAwesomeIcon
               icon={solid("cart-shopping")}
               size="1x"
@@ -33,19 +52,11 @@ const Navbar = (props) => {
             />
           </div>
 
-          <span className="px-4 mt-2">ДЭЛГҮҮР</span>
+          <span className=" pr-3 pl-2 mt-2">ДЭЛГҮҮР</span>
         </button>
 
-        <button className="bg-btnOrange text-white duration-500 px-4 py-2 mx-4 hover:bg-orange-700 rounded-3xl text-sm font-Roboto">
+        <button className="bg-btnOrange text-white duration-500 px-4 py-2 mr-4 hover:bg-orange-700 rounded-3xl text-xs font-Roboto lg:flex hidden ">
           НЭВТРЭХ
-        </button>
-
-        <button className=" text-zinc-500 hover:text-zinc-800 cursor-pointer visible mr-20">
-          <FontAwesomeIcon
-            icon={solid("magnifying-glass")}
-            size="2x"
-            color="#71717A"
-          />
         </button>
       </ul>
     </nav>
