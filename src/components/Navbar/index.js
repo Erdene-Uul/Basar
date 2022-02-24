@@ -1,6 +1,6 @@
 import React,{usdState, useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import * as favicon from "@fortawesome/free-solid-svg-icons";
+import {faBars, faClose} from "@fortawesome/free-solid-svg-icons";
 import Menu from "../Menu";
 import logo_image from "../../assets/images/menu_logo/menu_logo.png";
 import logo_image2 from "../../assets/images/menu_logo/menu_logo_02.png";
@@ -16,11 +16,11 @@ const Navbar = (props) => {
   return (
    
     <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30 ">
-       <button onClick={()=>{showSideMenu()}} className="lg:hidden menu-button"> 
+       <button onClick={()=>{showSideMenu()}} className="lg:hidden ml-4"> 
     {(isSideMenuOpen)?<FontAwesomeIcon
-      icon={favicon.faBars}
+      icon={faClose}
     /> : <FontAwesomeIcon
-    icon={favicon.faBars}
+    icon={faBars }
   />}
     </button>
     {(isSideMenuOpen) ? Sidebar(): ''}
