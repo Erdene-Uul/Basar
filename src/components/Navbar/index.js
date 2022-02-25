@@ -59,7 +59,7 @@ const Navbar = (props) => {
 
         {/* button дэлгүүр нэвтрэх */}
         <button className="bg-blueMain text-white duration-500 hover:bg-sky-700 rounded-3xl text-xs font-Roboto relative mr-4 lg:flex hidden ">
-          <div className="h-8 w-8 bg-sky-600 flex items-center justify-center rounded-full">
+          <div className="hidden lg:h-8 lg:w-8 bg-sky-600 lg:flex lg:items-center lg:justify-center rounded-full">
             <FontAwesomeIcon
               icon={solid("cart-shopping")}
               size="1x"
