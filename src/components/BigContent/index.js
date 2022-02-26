@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 class BigContent extends React.Component {
     render() {
         return (
-            <div className="flex flex-shrink-0 my-3 justify-center ml-16">
+            <div className="flex my-3 ">
                 <NavLink to={
                     {
                         pathname: "/news_details",
@@ -19,6 +19,8 @@ class BigContent extends React.Component {
                     <div className="w-96 mt-16">
                         <h2 className="text-[#252641] font-bold leading-7">{this.props.news.title}</h2>
                         <p className="text-[#696984]  text-sm mt-3">{this.props.news.description}</p>
+                        <p className="text-[#696984] underline hover:underline-offset-4 text-sm mt-3">Унших</p>
+
                     </div>
                 </NavLink>
             </div>
