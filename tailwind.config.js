@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Roboto: ["Roboto"],
+        'Nunito-Sans':['Nunito Sans'],
       },
       spacing: {
         '34': '136px',
