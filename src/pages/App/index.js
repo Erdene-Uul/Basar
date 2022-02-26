@@ -8,6 +8,8 @@ import Blog from "../Blog";
 import Organizations from "../Organizations";
 import Services from "../Sevices";
 import FirstAid from "../FirstAid";
+import NewsDetails from "../../components/NewsDetails";
+import Footer from "../../components/Footer";
 import { Route, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -15,7 +17,7 @@ class App extends Component {
     return (
       <div>
         <Navbar />
-        <main>
+        <main className="min-h-custom">
           <Switch>
             <Route path="/animals" component={Animals} />
             <Route path="/news" component={News} />
@@ -23,9 +25,12 @@ class App extends Component {
             <Route path="/organizations" component={Organizations} />
             <Route path="/services" component={Services} />
             <Route path="/first_aid" component={FirstAid} />
+            <Route path="/news_details" component={NewsDetails} />
             <Route path="/" component={Home} />
           </Switch>
         </main>
+        <div className="h-16 w-full bg-amber-400"></div>
+        <Footer/>
       </div>
   )}
 }

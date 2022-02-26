@@ -8,7 +8,7 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const Navbar = (props) => {
   return (
-    <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30 ">
+    <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30 drop-shadow-xl">
       {/* lg:  */}
       <div className="flex justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 ">
         <a href="#" className="text-2xl flex cursor-pointer">

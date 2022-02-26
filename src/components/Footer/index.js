@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
 const Footer = () => {
     return (
-        <div>
-            <footer className="h-32rem w-screen">
+       
+            <footer className="h-32rem w-full">
                 <div className="h-full wrapper">
                     <div className="grid grid-cols-6 py-12">
                         <div>
@@ -225,7 +225,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="h-11 w-screen bg-slate-600 text-white text-sm">
+                <div className="h-11 w-full bg-slate-600 text-white text-sm">
                     <div className="flex items-center justify-between wrapper py-1">
                         <p>All reserved by @basarmn</p>
                         <ul className="flex">
@@ -250,7 +250,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-        </div>
+        
     )
 }
 

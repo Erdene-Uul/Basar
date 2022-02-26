@@ -8,7 +8,13 @@ module.exports = {
         Roboto: ["Roboto"],
       },
       spacing: {
-       
+        '34': '136px',
+        '112': '28rem',
+        '300px': '324px',
+        '100px': '100px',
+
+
+
       },
       colors: {
         blueMain: "#33A0FF",
@@ -21,6 +27,9 @@ module.exports = {
       },
       borderRadius: {
         coverRadius: "5rem",
+      },
+      minHeight: {
+        'custom': '400px',
       },
     },
   },

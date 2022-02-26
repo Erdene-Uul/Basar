@@ -3,7 +3,6 @@ import ServiceList from "../../components/ServiceList";
 import Section1 from "../../components/Section1";
 import Section2 from "../../components/Section2";
 import Animals from "../../components/Animals";
-import Footer from "../../components/Footer";
 
 class Home extends Component {
     render() {
@@ -13,8 +12,6 @@ class Home extends Component {
                 <Section2 />
                 <ServiceList />
                 <Animals/>
-                <div className="h-16 w-screen bg-amber-400"></div>
-                <Footer/>
             </div>
         );
     }

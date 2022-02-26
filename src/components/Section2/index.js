@@ -1,37 +1,41 @@
 import React from "react";
-import axios from "../../axios-categories";
+import axios from "../../axios-news";
 import Card from "../Card";
+import Carousel from 'react-elastic-carousel'
 
 class Section2 extends React.Component {
 
     state = {
-        cards: []
+        news: []
     };
 
     componentDidMount() {
         axios
-            .get('/categories')
-            .then( response => {
-                this.setState({cards: response.data.data});
+            .get('/news')
+            .then(response => {
+                this.setState({ news: response.data.data });
             })
             .catch(err => console.log(err))
     }
 
     render() {
         return (
-            <div>
-            <h1 className="italic font-Roboto text-blue-700 font-extrabold ml-36 mt-8">
-        #ОНЦЛОХ БУЛАН
-        </h1>
-        {/* <!-- cover content мэдээ мэдээлэлийн хэсэг --> */}
-        <div className="container mx-auto mt-80">
-        <div className="flex items-stretch justify-around space-x-10 wrapper">
-            {this.state.cards.map((el, index) => 
-                <Card key={index} name={el.name} photo={el.photo} desc={el.description}/>
-            )}
-        </div>
-        </div>
+            <div className="mt-16">
+                <h1 className="italic font-Roboto text-blue-700 font-extrabold ml-36 mt-8 z-50">
+                    #ОНЦЛОХ БУЛАН
+                </h1>
+                {/* <!-- cover content мэдээ мэдээлэлийн хэсэг --> */}
+                <div className="container mx-auto mt-8">
+                    <div className="flex items-stretch justify-around space-x-10 wrapper py-3">
+                        <Carousel itemsToShow={4}>
+                                {this.state.news.map((el, index) =>
+                                    <Card key={index} news={el} />
+                                )}
+                        </Carousel>
+                    </div>
+                </div>
             </div>
-    )};
+        )
+    };
 }
 export default Section2;
