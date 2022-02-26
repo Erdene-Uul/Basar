@@ -60,36 +60,36 @@ class News extends Component {
 
     render() {
         return (
-            <div className="flex flex-col mt-32 wrapper font-">
+            <div className="flex flex-col  mt-32 lg:wrapper md:tab-wrapper m-wrapper">
                 {/*TITLE*/}
-                <div className="text-[#2F327D] text-3xl font-bold text-center font-Nunito-Sans">
+                <div className="text-[#2F327D] md:text-3xl text-2xl font-bold text-center font-Nunito-Sans">
                     МЭДЭЭ МЭДЭЭЛЭЛ
-                    <p className="text-[#696983] text-lg leading-8 font-Nunito-Sans font-medium">Амьтдын тухай бүх мэдээллийг эндээс</p>
+                    <p className="text-[#696983] md:text-lg text-lg leading-8 font-Nunito-Sans font-medium">Амьтдын тухай бүх мэдээллийг эндээс</p>
                 </div>
 
                 {/*SECTION 1*/}
-                <div className=" w-full grid grid-cols-11 gap-4 h-auto mt-14">
-                    <div className="col-span-3 col-start-2 ml-28">
+                <div className=" w-full lg:grid grid-cols-11 gap-4 h-auto mt-14 flex justify-center">
+                    <div className="col-span-5 col-start-2 ">
                         <div>
                             {
                                 <BigContent news={this.state.news[0]} />
                             }
                         </div>
                     </div>
-                    <div className="col-span-6 col-start-7 flex flex-col"> {this.state.section1.map((el, index) => (
+                    <div className="col-span-4 col-start-7 flex flex-col"> {this.state.section1.map((el, index) => (
                         <Content key={index} news={el} />
                     ))}
                     </div>
                 </div>
 
                 {/*SECTION 2*/}
-                <div className=" w-full grid grid-cols-11 gap-4 h-auto mt-28">
-                    <div className="col-span-4 col-start-2 ml-28 flex flex-col"> {this.state.section2.map((el, index) => (
+                <div className=" w-full lg:grid grid-cols-11 gap-4 h-auto mt-28 flex justify-center">
+                    <div className="col-span-5 col-start-2  flex flex-col"> {this.state.section2.map((el, index) => (
                         <Content key={index} news={el} />
                     ))} </div>
-                    <div className="col-span-3 col-start-8">
+                    <div className="col-span-4 col-start-7 hidden lg:block">
                         <div className="w-300px h-96 relative bg-black">
-                            <img src={PostBg} />
+                            <img src={PostBg} alt="postbg" />
                             <div className="absolute left-5 bottom-0 w-60 h-44">
                                 <h1 className=" text-white text-2xl font-bold">Бид амьтанд хайртай </h1>
                                 <p className="text-white py-6">Амьтдын төлөө хамтдаа таны дуу хоолой хэрэгтэй байна</p>
@@ -100,13 +100,13 @@ class News extends Component {
                 </div>
 
                 {/*SECTION 3 - Slider*/}
-                <div>
+                <div className="invisible lg:visible">
                     <Section2 />
                 </div>
 
                 {/*SECTION 4*/}
              
-                    <div className=" w-full grid grid-cols-11 gap-4 h-auto my-14">
+                    <div className=" w-full lg:grid grid-cols-11 gap-4 h-auto my-14 flex items-center flex-col">
                     <div className="col-span-5 col-start-2 flex flex-col"> {this.state.section3.map((el, index) => (
                         <Content key={index} news={el} />
                     ))} </div>

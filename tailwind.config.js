@@ -7,10 +7,12 @@ module.exports = {
       fontFamily: {
         Roboto: ["Roboto"],
         'Nunito-Sans':['Nunito Sans'],
+        'Montserrat':['Montserrat'],
       },
       spacing: {
         '34': '136px',
         '112': '28rem',
+        '120': '30rem',
         '300px': '324px',
         '100px': '100px',
 
@@ -18,13 +20,13 @@ module.exports = {
 
       },
       colors: {
-        blueMain: "#33A0FF",
-        OrangeMain: "#FFF3E4",
-        btnOrange: "#F48c06",
-        btnYagaan: "#ff6f4f",
-        btnSmColor: "#f4c467",
-        bgServiceColor: "#f8fbfb",
-        greengradient: "rgba(180deg, #36BC49 0%, #03A21A 100%);",
+        'blueMain': '#33A0FF',
+        'OrangeMain': '#FFF3E4',
+        'btnOrange': '#F48c06',
+        'btnYagaan': '#ff6f4f',
+        'btnSmColor': '#f4c467',
+        'bgServiceColor': '#f8fbfb',
+        'greengradient': 'rgba(180deg, #36BC49 0%, #03A21A 100%)',
       },
       borderRadius: {
         coverRadius: "5rem",

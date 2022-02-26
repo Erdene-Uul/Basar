@@ -3,10 +3,12 @@ import playStore from '../../assets/images/footer_img/playstore.png';
 import appStore from '../../assets/images/footer_img/appstore.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+
 const Footer = () => {
     return (
        
-            <footer className="h-32rem w-full">
+            <footer className="h-32rem w-full hidden lg:block">
+            
                 <div className="h-full wrapper">
                     <div className="grid grid-cols-6 py-12">
                         <div>
@@ -179,8 +181,8 @@ const Footer = () => {
                         <div className="col-span-2 border-slate-600 border-l-2 pl-14">
                             <div className="flex items-center">
                                 <FontAwesomeIcon icon={solid('headset')} size="3x" />
-                                <p className="text-lg font-medium font-Roboto mx-10">77111208</p>
-                                <button className="px-9 py-2 border rounded-lg">Чатлах</button>
+                                <p className="text-lg font-medium  mx-10 font-Montserrat">77111208</p>
+                                <button className="px-9 py-2 border text-[#9B9B9B] rounded-lg font-Montserrat">Чатлах</button>
                             </div>
                             <div className="mt-12 mb-8">
                                 <ul className="flex justify-between">
@@ -225,7 +227,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="h-11 w-full bg-slate-600 text-white text-sm">
+                <div className="h-11 w-full bg-slate-600 text-white text-sm  ">
                     <div className="flex items-center justify-between wrapper py-1">
                         <p>All reserved by @basarmn</p>
                         <ul className="flex">

@@ -10,7 +10,9 @@ import Services from "../Sevices";
 import FirstAid from "../FirstAid";
 import NewsDetails from "../../components/NewsDetails";
 import Footer from "../../components/Footer";
+import MFooter from "../../components/MobileFooter";
 import { Route, Switch } from "react-router-dom";
+
 
 class App extends Component {
   render() {
@@ -31,6 +33,7 @@ class App extends Component {
         </main>
         <div className="h-16 w-full bg-amber-400"></div>
         <Footer/>
+        <MFooter />
       </div>
   )}
 }
