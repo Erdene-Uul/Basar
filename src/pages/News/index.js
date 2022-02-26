@@ -11,47 +11,32 @@ class News extends Component {
 
     state = {
         news: [{}],
-        section1:[],
+        section1: [],
         section2: [],
-        section3:[],
-        section4:[]
+        section3: [],
+        section4: []
     }
 
     componentDidMount() {
         axios.get('/news').then(res => {
             this.setState({ news: res.data.data })
         }).finally(() => {
-            const fsection1 = [...this.state.section1]
-            for (let i = 1; i < 4; i++) {
-                fsection1.push(this.state.news[i])
-            }
-            
-            this.setState({section1:fsection1});
-            console.log(this.state.section1)
-            
-            const fsection2 = [...this.state.section2]
-            for (let i = 4; i < 7; i++) {
-                fsection2.push(this.state.news[i])
-            }
-            
-            this.setState({section2:fsection2});
-            console.log(this.state.section2)
 
-            const fsection3 = [...this.state.section3]
-            for (let i = 7; i < 10; i++) {
-                fsection3.push(this.state.news[i])
+            const sections = [[], [], [], []];
+            let index = this.state.news.length - 2;
+            for (let i = 0; i < sections.length; i++) {
+                for (let j = 0; j < 3; j++) {
+                    sections[i].push(this.state.news[index]);
+                    index--;
+                }
             }
             
-            this.setState({section3:fsection3});
-            console.log(this.state.section3)
-
-            const fsection4 = [...this.state.section4]
-            for (let i = 10; i < 13; i++) {
-                fsection4.push(this.state.news[i])
-            }
-            
-            this.setState({section4:fsection4});
-            console.log(this.state.section4)
+            this.setState({
+                section1: sections[0],
+                section2: sections[1],
+                section3: sections[2],
+                section4: sections[3]
+            });
         })
 
        
@@ -72,7 +57,7 @@ class News extends Component {
                     <div className="col-span-3 col-start-2 ml-28">
                         <div>
                             {
-                                <BigContent news={this.state.news[0]} />
+                                <BigContent news={this.state.news[this.state.news.length - 1]} />
                             }
                         </div>
                     </div>
