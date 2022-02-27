@@ -45,11 +45,11 @@ class News extends Component {
 
     render() {
         return (
-            <div className="flex flex-col  mt-32 lg:wrapper md:tab-wrapper m-wrapper">
+            <div className="flex flex-col  mt-32 lg:wrapper md:tab-wrapper m-wrapper box-border">
                 {/*TITLE*/}
                 <div className="text-[#2F327D] md:text-3xl text-2xl font-bold text-center font-Nunito-Sans">
                     МЭДЭЭ МЭДЭЭЛЭЛ
-                    <p className="text-[#696983] md:text-lg text-lg leading-8 font-Nunito-Sans font-medium">Амьтдын тухай бүх мэдээллийг эндээс</p>
+                    <p className="text-[#696983] md:text-lg text-base leading-8 font-Nunito-Sans font-medium">Амьтдын тухай бүх мэдээллийг эндээс</p>
                 </div>
 
                 {/*SECTION 1*/}
@@ -68,7 +68,7 @@ class News extends Component {
                 </div>
 
                 {/*SECTION 2*/}
-                <div className=" w-full lg:grid grid-cols-11 gap-4 h-auto mt-28 flex justify-center">
+                <div className=" w-full lg:grid grid-cols-11 gap-4 h-auto lg:mt-28 mt-2 flex justify-center">
                     <div className="col-span-5 col-start-2  flex flex-col"> {this.state.section2.map((el, index) => (
                         <Content key={index} news={el} />
                     ))} </div>
