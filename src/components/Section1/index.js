@@ -7,7 +7,11 @@ import { withRouter } from "react-router-dom";
 const Section1 = () => {
     return (
          <section
+<<<<<<< HEAD
       className="w-full h-96 top-0 bg-OrangeMain rounded-b-coverRadius"
+=======
+      className="w-full h-96 top-0 bg-OrangeMain rounded-b-coverRadius absolute"
+>>>>>>> 9a3c476e551507dec46b1f8d8b13019e7d6a7a5c
     >
       <div className="flex justify-center">
         <img
