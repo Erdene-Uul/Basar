@@ -13,7 +13,7 @@ class Home extends Component {
                 <Section2 />
                 <ServiceList />
                 <Animals/>
-                <div className="h-16 w-screen bg-amber-400"></div>
+                <div className="h-16 w-full bg-amber-400"></div>
                 <Footer/>
             </div>
         );

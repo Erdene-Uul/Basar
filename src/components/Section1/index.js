@@ -8,7 +8,7 @@ const Section1 = () => {
     return (
     <div>
          <section
-      className="w-screen h-96 top-0 bg-OrangeMain rounded-b-coverRadius absolute"
+      className="w-full h-96 top-0 bg-OrangeMain rounded-b-coverRadius absolute"
     >
       <div className="flex justify-center">
         <img
