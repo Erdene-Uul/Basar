@@ -72,7 +72,7 @@ class News extends Component {
                     <div className="col-span-5 col-start-2  flex flex-col"> {this.state.section2.map((el, index) => (
                         <Content key={index} news={el} />
                     ))} </div>
-                    <div className="col-span-4 col-start-7 hidden lg:block">
+                    <div className="col-span-4 col-start-7 ml-12 hidden lg:block">
                         <div className="w-300px h-96 relative bg-black">
                             <img src={PostBg} alt="postbg" />
                             <div className="absolute left-5 bottom-0 w-60 h-44">

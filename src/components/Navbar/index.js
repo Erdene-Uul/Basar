@@ -14,11 +14,8 @@ const Navbar = (props) => {
     (isSideMenuOpen) ? setisSideMenuOpen(false):setisSideMenuOpen(true)
 }
   return (
-<<<<<<< HEAD
-    <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30 drop-shadow-xl">
-=======
    
-    <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30  ">
+    <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30 box-border ">
       <div className="fixed top-4 left-3"> <button onClick={()=>{showSideMenu()}} className="lg:hidden"> 
     {(isSideMenuOpen)?<FontAwesomeIcon
       icon={faClose}
@@ -27,7 +24,6 @@ const Navbar = (props) => {
   />}
     </button></div>
     {(isSideMenuOpen) ? Sidebar(): ''}
->>>>>>> 9a3c476e551507dec46b1f8d8b13019e7d6a7a5c
       {/* lg:  */}
       <div className="flex justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 ">
         <a href="#" className="text-2xl flex cursor-pointer">

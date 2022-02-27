@@ -6,14 +6,9 @@ import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 const Footer = () => {
     return (
-<<<<<<< HEAD
        
             <footer className="h-32rem w-full hidden lg:block">
             
-=======
-        <div>
-            <footer className="h-32rem w-full">
->>>>>>> 9a3c476e551507dec46b1f8d8b13019e7d6a7a5c
                 <div className="h-full wrapper">
                     <div className="grid grid-cols-6 py-12">
                         <div>
@@ -232,11 +227,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-<<<<<<< HEAD
                 <div className="h-11 w-full bg-slate-600 text-white text-sm  ">
-=======
-                <div className="h-11 w-full bg-slate-600 text-white text-sm">
->>>>>>> 9a3c476e551507dec46b1f8d8b13019e7d6a7a5c
                     <div className="flex items-center justify-between wrapper py-1">
                         <p>All reserved by @basarmn</p>
                         <ul className="flex">

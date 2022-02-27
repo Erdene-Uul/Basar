@@ -13,7 +13,7 @@ class Content extends React.Component {
                 } className="transform hover:scale-105 transition-all duration-500 ease-in-out flex flex-row">
                     <div className="relative md:h-36 md:w-44  h-28 w-36">
                         <img className="md:h-36 md:w-44 h-24 w-32 rounded-2xl" src={this.props.news.photo} alt="cover_img_01" />
-                        <button className="absolute bottom-5 lg:text-sm text-xs right-5 uppercase z-10 md:px-2 md:py-1 p-1 bg-btnSmColor rounded-full">
+                        <button className="absolute  lg:text-sm text-xs md:bottom-2 md:right-2 bottom-5 right-5 uppercase z-10 md:px-2 md:py-1 p-1 bg-btnSmColor rounded-full">
                             {this.props.news.categoryName}
                         </button>
                     </div>
