@@ -27,11 +27,11 @@ class NewsDetails extends React.Component {
                             <div className="ml-10 border-l border-[#B8B8B9] text-xs px-6 flex justify-center items-center font-[#B9BABA]">{this.news.createdAt.substring(0, 10)}</div>
                         </div>
                         <div className="text-[#464C53]">
-                            <div>  {this.news.content.content1}</div>
+                            <div className="whitespace-pre-wrap">  {this.news.content.content1}</div>
                             <div className="w-112">
                                 <img className="h-80 my-6 border" src={this.news.photo} />
                             </div>
-                            <div>
+                            <div className="whitespace-pre-wrap">
                                 {this.news.content.content2}
                             </div>
                         </div>

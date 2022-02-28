@@ -16,6 +16,8 @@
   @apply flex flex-shrink-0;
 }
 
+ 
+
 /*үйлчилгээний хэсэгий арын background style*/
 .box {
   @apply w-16 h-16 bg-greengradient;

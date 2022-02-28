@@ -26,8 +26,8 @@ class Section2 extends React.Component {
                 </h1>
                 {/* <!-- cover content мэдээ мэдээлэлийн хэсэг --> */}
                 <div className="container mx-auto mt-8">
-                    <div className="flex items-stretch justify-around  wrapper py-3">
-                        <Carousel itemsToShow={4} >
+                    <div className="flex items-stretch justify-around  w-full py-3">
+                        <Carousel itemsToShow={4} disableArrowsOnEnd={false}  >
                                 {this.state.news.map((el, index) =>
                                     <Card key={index} news={el} />
                                 )}

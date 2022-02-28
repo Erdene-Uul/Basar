@@ -6,6 +6,7 @@ import logo_image from "../../assets/images/menu_logo/menu_logo.png";
 import logo_image2 from "../../assets/images/menu_logo/menu_logo_02.png";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import Sidebar from "../Sidebar";
+import {Link} from 'react-router-dom';
 
 
 const Navbar = (props) => {
@@ -26,7 +27,7 @@ const Navbar = (props) => {
     {(isSideMenuOpen) ? Sidebar(): ''}
       {/* lg:  */}
       <div className="flex justify-center items-center w-full absolute h-14 lg:flex lg:justify-between lg:items-center lg:sticky  ml-4 lg:w-96 ">
-        <a href="#" className="text-2xl flex cursor-pointer">
+        <Link to="/" className="text-2xl flex cursor-pointer">
           <div className="flex shrink-0 ">
             <img className="h-10" src={logo_image} />
           </div>
@@ -34,7 +35,7 @@ const Navbar = (props) => {
           <div className="flex shrink-0">
             <img className="h-10 pl-2 " src={logo_image2} alt="" />
           </div>
-        </a>
+        </Link>
       </div>
 
       <Menu />

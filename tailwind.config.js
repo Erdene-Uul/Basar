@@ -32,6 +32,7 @@ module.exports = {
         Zaryellow2: "#f8cf7e",
         ZarGreen1: "#84DB7E",
         ZarGreen2: "#BDDB7E",
+        footerTop1: "#EFAB3E",
         greengradient: "rgba(180deg, #36BC49 0%, #03A21A 100%)",
       },
       borderRadius: {
