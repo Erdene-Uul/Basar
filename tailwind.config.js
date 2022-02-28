@@ -33,6 +33,7 @@ module.exports = {
         Zaryellow2: "#f8cf7e",
         ZarGreen1: "#84DB7E",
         ZarGreen2: "#BDDB7E",
+<<<<<<< HEAD
         DogColor1: "#E5F1F7",
         DogColor2: "#CCE3EC",
         DogTextColor:"#C1DFEC",
@@ -59,6 +60,10 @@ module.exports = {
         MouseTextColor: "#C0E7E5",
          
 
+=======
+        footerTop1: "#EFAB3E",
+        greengradient: "rgba(180deg, #36BC49 0%, #03A21A 100%)",
+>>>>>>> 26f19c854f7409dcea06d3891f7e1db062f9aa9b
       },
       borderRadius: {
         coverRadius: "5rem",

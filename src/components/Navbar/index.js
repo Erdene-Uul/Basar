@@ -6,7 +6,12 @@ import logo_image from "../../assets/images/menu_logo/menu_logo.png";
 import logo_image2 from "../../assets/images/menu_logo/menu_logo_02.png";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import Sidebar from "../Sidebar";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+import {Link} from 'react-router-dom';
+
+>>>>>>> 26f19c854f7409dcea06d3891f7e1db062f9aa9b
 
 const Navbar = (props) => {
   const [isSideMenuOpen, setisSideMenuOpen] = useState(false);

@@ -31,7 +31,6 @@ class App extends Component {
             <Route path="/" component={Home} />
           </Switch>
         </main>
-        <div className="h-16 w-full bg-amber-400"></div>
         <Footer/>
         <MFooter />
       </div>
