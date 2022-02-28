@@ -33,10 +33,9 @@ module.exports = {
         Zaryellow2: "#f8cf7e",
         ZarGreen1: "#84DB7E",
         ZarGreen2: "#BDDB7E",
-<<<<<<< HEAD
         DogColor1: "#E5F1F7",
         DogColor2: "#CCE3EC",
-        DogTextColor:"#C1DFEC",
+        DogTextColor: "#C1DFEC",
         CatColor1: "#FCF5D1",
         CatColor2: "#FBF2B9",
         CatTextColor: "#FBEEA6",
@@ -44,7 +43,7 @@ module.exports = {
         RabbitColor2: "#f4f6fa",
         RabbitTextColor: "#e9ecf2",
         BirdColor1: "#f7f9e1",
-        BirdColor2 : "#e9f4c6",
+        BirdColor2: "#e9f4c6",
         BirdTextColor: "#dbe5bb",
         HedgehogColor1: "#FBF0F2",
         HedgehogColor2: "#F9EBEC",
@@ -56,14 +55,8 @@ module.exports = {
         TurtleColor2: "#DFE4F9",
         TurtleTextColor: "#D2D9F9",
         MouseColor: "#E9F7F6",
-        MouseColor2:"#CEECEB",
+        MouseColor2: "#CEECEB",
         MouseTextColor: "#C0E7E5",
-         
-
-=======
-        footerTop1: "#EFAB3E",
-        greengradient: "rgba(180deg, #36BC49 0%, #03A21A 100%)",
->>>>>>> 26f19c854f7409dcea06d3891f7e1db062f9aa9b
       },
       borderRadius: {
         coverRadius: "5rem",
