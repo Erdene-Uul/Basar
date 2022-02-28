@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .wrapper {
-  @apply mx-36;
+  @apply mx-12 md:mx-36;
 }
 /* mobile wrapper*/
 .m-wrapper {
@@ -17,9 +17,6 @@
 }
 
 /*үйлчилгээний хэсэгий арын background style*/
-.box {
-  @apply w-16 h-16 bg-greengradient;
-}
 
 .animals-wrapper {
   @apply 2xl:w-24;
