@@ -10,11 +10,11 @@ const Sidebar = (props) => {
 
     return (<div className="fixed h-auto w-2/3 sm:w-2/4 lg:hidden bg-gray-500 top-11">
     <ul className="flex flex-col font-thin py-4 px-10">
-      <div><button className="bg-blueMain text-white duration-500 hover:bg-sky-700 rounded-3xl text-xs font-Roboto relative flex items-center justify-center lg:hidden ">
+      <div><button className="bg-blueMain text-white duration-500 hover:bg-sky-700 rounded-3xl text-xs font-Roboto relative flex items-center justify-center  lg:hidden ">
           <div className="h-3 w-6 bg-sky-600  rounded-full">
             <FontAwesomeIcon
               icon={solid("cart-shopping")}
-              size="2x"
+              size="2xl"
               color="white"
             />
           </div>
