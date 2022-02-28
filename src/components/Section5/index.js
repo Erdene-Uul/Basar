@@ -4,7 +4,7 @@ import ZarImg from "../../assets/images/zar1.png";
 const Section5 = () => {
   return (
     <div>
-      <img className="bg-cover" src={ZarImg} />
+      <img className="bg-cover" src={ZarImg} alt="zarImg"/>
     </div>
   );
 };
