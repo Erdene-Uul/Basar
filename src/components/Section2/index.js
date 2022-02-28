@@ -27,7 +27,7 @@ class Section2 extends React.Component {
                 {/* <!-- cover content мэдээ мэдээлэлийн хэсэг --> */}
                 <div className="container mx-auto mt-8">
                     <div className="flex items-stretch justify-around  wrapper py-3">
-                        <Carousel itemsToShow={4}>
+                        <Carousel itemsToShow={4} >
                                 {this.state.news.map((el, index) =>
                                     <Card key={index} news={el} />
                                 )}

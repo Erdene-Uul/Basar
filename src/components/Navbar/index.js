@@ -15,7 +15,7 @@ const Navbar = (props) => {
 }
   return (
    
-    <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30 box-border ">
+    <nav className="w-full h-14 md: bg-white shadow flex fixed top-0 right-0 left-0 z-30 drop-shadow-xl ">
       <div className="fixed top-4 left-3"> <button onClick={()=>{showSideMenu()}} className="lg:hidden"> 
     {(isSideMenuOpen)?<FontAwesomeIcon
       icon={faClose}
