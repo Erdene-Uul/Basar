@@ -48,6 +48,7 @@ module.exports = {
         HedgehogColor1: "#FBF0F2",
         HedgehogColor2: "#F9EBEC",
         HedgehogTextColor: "#F9EBEC",
+        footerTop1: "#EFAB3E",
         FishColor1: "#F0FBFD",
         FishColor2: "#E2ECFA",
         FishTextColor: "#D4E3FB",

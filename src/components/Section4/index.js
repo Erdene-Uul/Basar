@@ -11,7 +11,7 @@ const Section4 = () => {
         </h1>
         <img
           src={Basar_01}
-          className="h-44 md:h-64 xl:h-80 inline-block ml-64 md:ml-80 xl:ml-120 mt-32 xl:mt-20"
+          className="h-44 md:h-64 xl:h-80 inline-block ml-56 md:ml-80 xl:ml-120 mt-32 xl:mt-20"
         />
       </div>
       <div className=" w-full lg:w-1/2 md:h-96 bg-gradient-to-r from-ZarGreen1 to-ZarGreen2 relative">
@@ -20,7 +20,7 @@ const Section4 = () => {
         </h1>
         <img
           src={Basar_02}
-          className="h-44 md:h-64 xl:h-80 inline-block ml-64 md:ml-80 xl:ml-120 mt-32 xl:mt-24 "
+          className="h-44 md:h-64 xl:h-80 inline-block ml-56 md:ml-80 xl:ml-120 mt-32 xl:mt-24 "
         />
       </div>
     </div>

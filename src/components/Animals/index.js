@@ -10,7 +10,7 @@ import guinea from "../../assets/images/animals/guinea.png";
 const Animals = () => {
   return (
     <section className="wrapper my-16 md:my-24 h-52.0625rem ">
-      <h1 className=" uppercase italic font-Roboto text-blue-700 font-extrabold my-10 relative">
+      <h1 className=" uppercase md:text-2xl italic font-Roboto text-blue-700 font-extrabold my-10 relative">
         #Амьтад
       </h1>
       <div className="flex flex-wrap">

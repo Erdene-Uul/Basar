@@ -4,11 +4,14 @@ import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const ServiceList = (props) => {
   return (
-    <section className="mt-36 w-full h-96 bg-bgServiceColor px-24   py-6 md:py-24">
-      <h1 className="uppercase italic font-Roboto text-blue-700 font-extrabold text-center pb-4 md:pb-10">
+    <section
+      className="mt-36 w-full h-96 bg-bgServiceColor
+     px-6 sm:px-40 lg:px-80   py-6 md:py-24"
+    >
+      <h1 className="uppercase italic font-Roboto text-blue-700 md:text-2xl font-extrabold text-center pb-4 md:pb-10">
         #Үйлчилгээ
       </h1>
-      <div className="flex flex-wrap justify-around gap-8">
+      <div className="flex flex-wrap justify-around gap-14">
         <div
           className={`w-16 h-16 md:w-20 md:h-20 bg-green-500 rounded-md hover:bg-green-600 transition-all ease-in-out duration-500 cursor-pointer`}
         >

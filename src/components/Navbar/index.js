@@ -6,8 +6,7 @@ import logo_image from "../../assets/images/menu_logo/menu_logo.png";
 import logo_image2 from "../../assets/images/menu_logo/menu_logo_02.png";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import Sidebar from "../Sidebar";
-import {Link} from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const [isSideMenuOpen, setisSideMenuOpen] = useState(false);
@@ -52,7 +51,7 @@ const Navbar = (props) => {
       <Menu />
       <ul className="flex items-center justify-end w-full lg:w-2/6  ">
         {/* search input */}
-        <div className="flex">
+        <div className="flex pr-5">
           <input
             className="  outline-none text-xs placeholder:text-zinc-600 placeholder:text-right caret-gray-500"
             type="search"
